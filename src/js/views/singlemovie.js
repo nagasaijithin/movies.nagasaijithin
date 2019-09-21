@@ -133,6 +133,37 @@ root.querySelectorAll('.person').forEach(function(person){
 
     });
 });
+   
+            root.querySelector(".all-cats .slidem").addEventListener("click",function(){
+                   
+                    
+                if(imgsliderdeg < 0 ){
+                    root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${imgsliderdeg}px, 0, 0)`;
+                    
+                }else{
+                    root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${imgsliderdeg -= 65}px, 0, 0)`;
+                    
+                }
+              
+               
+            });
+                    
+            root.querySelector(".all-cats .slidep").addEventListener("click",function(){
+                const wapperWidth = root.querySelector(".ani-wapper").clientWidth;
+              
+                if((80*howManypersons) - wapperWidth < imgsliderdeg) { 
+                    let val ;
+                    val = imgsliderdeg;
+                    root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${val}px, 0, 0)`;
+                   
+                 }else{
+                     let val;
+                     val = imgsliderdeg += 65;
+                    root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${val}px, 0, 0)`;
+                   
+                 }
+                
+            });
 
  }
 let slide;
@@ -143,8 +174,10 @@ let slide;
        
        if(root.querySelector(".ani-wapper .persons")){
         const wapperWidth = root.querySelector(".ani-wapper").clientWidth;
+
                 if((80*howManypersons) - wapperWidth < imgsliderdeg) { 
-                    clearInterval(slide); 
+                    root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${imgsliderdeg}px, 0, 0)`;
+                    imgsliderdeg = imgsliderdeg;
                 }else{
                     root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${imgsliderdeg}px, 0, 0)`;
                     imgsliderdeg += 65;
@@ -154,33 +187,8 @@ let slide;
 
             }
 
-            try{
-                root.querySelector(".all-cats .slidem").addEventListener("click",function(){
-                    const wapperWidth = root.querySelector(".ani-wapper").clientWidth;
-                    root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${imgsliderdeg < 0 ? imgsliderdeg = imgsliderdeg :imgsliderdeg -= 65}px, 0, 0)`;
-                    clearInterval(slide);
-                   
-                });
-                        
-                root.querySelector(".all-cats .slidep").addEventListener("click",function(){
-                    const wapperWidth = root.querySelector(".ani-wapper").clientWidth;
-                   
-                    if((80*howManypersons) - wapperWidth < imgsliderdeg) { 
-                        root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${imgsliderdeg = imgsliderdeg}px, 0, 0)`;
-                        clearInterval(slide);
-                     }else{
-                        root.querySelector(".ani-wapper .persons").style.transform = `translate3d(-${imgsliderdeg += 65}px, 0, 0)`;
-                        clearInterval(slide);
-                     }
-                    
-                });
-            }catch{
 
-            }
-          
         }
-       
-
  
 
 

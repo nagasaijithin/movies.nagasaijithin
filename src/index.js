@@ -101,19 +101,19 @@ form.addEventListener('submit', function(e){
 
           topMovies()
           .then(data => renderTopMovies(data))
-          .catch(error => console.log(error));
+          
 
           upComingMovies()
           .then(data => renderUpcoming(data))
-          .catch(error => console.log(error));
+          
 
           genermovies(28,1)
           .then(data => renderactionMovies(data))
-          .catch(error => console.log(error));   
+           
 
           handelbarnav()
           .then(data => rendernav(data))
-          .catch(error => console.log(error));
+     
 
      
 
