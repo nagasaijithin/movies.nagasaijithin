@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../film-clipart-icon-10-transparent.png" type="image/png" sizes="64x64">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+    
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    
+    <title>Movies.</title>
+
+    <style>
+    
+.main-loader{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    z-index: 99999;
+}
+.loader-wapper{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.loader-wapper .loader-continer{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .loader-wapper .loader-continer .loader{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 5rem;
+            height: 5rem;
+            border: 5px solid rgba(214, 195, 195, 0.83);
+            border-radius: 50%;
+            border-top-color: #040404;
+            animation: loader 1s linear infinite;
+        }
+    
+@keyframes loader{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
+    
+    
+    </style>
+</head>
+<body>
+    <div class="main-loader">
+        <div class="loader-wapper">
+             <div class="loader-continer">
+                 <div class="loader"></div>
+             </div>
+        </div> 
+    </div>
+   
+        <div class="handale-nav">
+
+                <form class="form">
+                        <input type="search" placeholder="Search from movies..." name="searchbar" id="search">
+                        <button><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="nav-items">
+                    
+                    <li class="items nav-i item1"></li>
+                    <li class="items nav-i item2"></li>
+                    <li class="items nav-i item3"></li>
+                    <li class="items nav-i item4"></li>
+                    <li class="items nav-i item5"></li>
+                    <li class="items nav-i item6"></li>
+                    <li class="items nav-i item7"></li>
+                    <li class="items nav-i item8"></li>
+                    <li class="items nav-i item9"></li>
+                    <li class="items nav-i item10"></li>
+                    <li class="items nav-i item11"></li>
+                    <li class="items nav-i item12"></li>
+                    <li class="items nav-i item13"></li>
+                    <li class="items nav-i item14"></li>
+                    <li class="items nav-i item15"></li>
+                    <li class="items nav-i item16"></li>
+                    <li class="items nav-i item17"></li>
+                    <li class="items nav-i item18"></li>
+                    <li class="items nav-i item19"></li>
+                </ul>
+    
+                </div>
+
+                <nav class="nav">
+                       <a href="/"><h3>Movies <span>.</span></h3></a> 
+                        <div class="nav__handel-bar">
+                            <div class="bars"></div>
+                        </div>
+                    </nav>
+           
+        <div class="root">
+
+
+                <div class="container">
+                        <div class="popular-movies">
+                            <div class="titles">
+                                <h2>Popular</h2>
+                                <h3>Movies</h3>
+                            </div>
+                            <div class="popular-movies__grid">
+                                <div class="items items-2 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>                       
+
+                                </div>
+                                <div class="items items-1 movieclick">
+                                    
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+
+                                </div>
+                                <div class="items items-3 movieclick">
+                                    
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+
+                                </div>
+                                <div class="items items-4 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+
+                                </div>
+                                <div class="items items-5 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+
+                                </div>
+                            </div>
+                            <div class="button">
+                                <a href="#" class="btn">See more..</a>
+                            </div>
+                        </div>    
+                        <div class="slider slider-container">
+                
+                                    <div class="slider-grid">
+                                        <div class="titles slider-grid__title">
+                                            <h2>Upcomeing</h2>
+                                            <h3>Movies</h3>
+                                        </div>
+                                        <div class="slider-grid__items slider-grid__item1 movieclick">
+                                            <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                        </div>
+                                        <div class="slider-grid__items slider-grid__item2 movieclick">
+                                            <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                        </div>
+                                        <div class="slider-grid__items slider-grid__item3 movieclick">
+                                            <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                        </div>
+                                        <div class="slider-grid__items slider-grid__item4 movieclick">
+                                            <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                        </div>
+                                        <div class="slider-grid__items slider-grid__item5 movieclick">
+                                            <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                                 
+                                        </div>
+                                        <div class="sidelightcolor"></div>
+                                    </div>
+                        </div>
+                
+                
+                
+                
+                        <div class="slider slider-container-2">
+                            <div class="slider-container-2__grid">
+                                <div class="titles slider-container-2__title">
+                                        <h2>Top Rated</h2>
+                                        <h3>Movies</h3>
+                                </div>
+                                <div class="slider-c-grid__items slider-grid__item1 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+                
+                                </div>
+                                <div class="slider-c-grid__items slider-grid__item2 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+                
+                                </div>
+                                <div class="slider-c-grid__items slider-grid__item3 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+                
+                                </div>
+                                <div class="slider-c-grid__items slider-grid__item4 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+                
+                                </div>
+                                <div class="slider-c-grid__items slider-grid__item5 movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+                
+                                </div>
+                                <div class="sidelightcolor"></div>
+                            </div>
+                        </div>
+                
+                
+                
+                
+                        <div class="popular-movies-2">
+                            <div class="titles popular-movies-2__title">
+                                <h2>Action</h2>
+                                <h3>Movies</h3>
+                            </div>
+                            <div class="popular-movies-2__grid">
+                                <div class="pm2-grid-item1 items movieclick">
+                                    <div class="card-loader">
+                                        <div class="loader"></div>
+                                    </div>
+                       
+                
+                                </div>
+                                <div class="pm2-grid-item2 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                
+                                </div>
+                                <div class="pm2-grid-item3 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                
+                                </div>
+                                <div class="pm2-grid-item4 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                  
+                
+                                </div>
+                                <div class="pm2-grid-item5 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                  
+                
+                                </div>
+                                <div class="pm2-grid-item6 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                    
+                
+                                </div>
+                                <div class="pm2-grid-item7 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                   
+                
+                                </div>
+                                <div class="pm2-grid-item8 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                   
+                
+                                </div>
+                                <div class="pm2-grid-item9 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                      
+                    
+                                </div>
+                                <div class="pm2-grid-item10 items movieclick">
+                                        <div class="card-loader">
+                                                <div class="loader"></div>
+                                            </div>
+                               
+                                      
+                    
+                                </div>
+                            </div>
+                            <div class="button">
+                                    <a href="#" class="btn">See more..</a>
+                            </div>
+                        </div>
+                    </div>
+         
+
+
+
+                    <!-- <div class="single-movie">
+                        <div class="main-heading">
+
+                            <div class="sm-img">
+                                <img src="../hero.jpg" alt="">
+                            </div>
+
+                            <div class="sm-bio">
+                                <div class="bio-main">
+                                    <div class="titles b-t">
+                                        <h2>bigestnamein the movies lifefdgfgsdfg fgfgsfg fgfgfg</h2>
+                                        <h3>bigestnamein the movies</h3>
+                                    </div>
+                                    <div class="rating">
+                                        <h3><span>7.5</span> / 10 <span><i class="fas fa-star"></i></span></h3>
+                                    </div>
+                                    <div class="overviwe">
+                                        <h3>Overview</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                             Velit perspiciatis modi odio illo, necessitatibus nisi 
+                                             dicta officia aspernatur tenetur aliquam quisquam 
+                                             suscipit harum non laboriosam eum vero saepe corporis 
+                                             nulla.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                             Velit perspiciatis modi odio illo, necessitatibus nisi 
+                                             dicta officia aspernatur tenetur aliquam quisquam 
+                                             suscipit harum non laboriosam eum vero saepe corporis 
+                                             nulla.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                             Velit perspiciatis modi odio illo, necessitatibus nisi 
+                                             dicta officia aspernatur tenetur aliquam quisquam 
+                                             suscipit harum non laboriosam eum vero saepe corporis 
+                                             nulla.</p>
+
+                                    </div>
+                                    <div class="cats">
+                                            <div class="titles">
+                                                <h2>Cats</h2>
+                                            </div>
+                                        <div class="all-cats">
+                                                <span><i class="fas fa-angle-double-left"></i></span>
+                                               
+                                                <div class="ani-wapper">
+                                                        <div class="persons">
+                                                                <div class="person perons1">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons2">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons3">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons4">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons5">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons6">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons7">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons8">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons9">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons10">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons11">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons12">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons13">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons14">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons15">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons16">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons17">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons18">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons19">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                                <div class="person perons20">
+                                                                        <img src="../hero.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                </div>
+                                                
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                            </div>
+                                    </div>
+                                
+                                    <div class="button cats-btn">
+                                        <a href="#" class="btn">Websit</a>
+                                        <a href="#" class="btn">IMDB</a>
+                                        <a href="#" class="btn">Trailer</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="sm-recommended">
+                                <div class="titles">
+                                        <h2>Recommended</h2>
+                                        <h3>Movies</h3>
+                                </div>
+                                <div class="sm-grid">
+                                    <div class="sm-items item1">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item2">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item3">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item4">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item5">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item6">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item7">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item8">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item9">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item10">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item11">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item12">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item13">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item14">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item15">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item16">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item17">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item18">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item19">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                    <div class="sm-items item20">
+                                        <img src="../hero.jpg" alt="">
+                                        <h3>bigestnamein the movies life</h3>
+                                    </div>
+                                </div>    
+                        </div>
+                    </div> -->
+
+                    
+            <!-- <div class="continer-2">
+                <div class="c2-render">
+                        <div class="titles">
+                            <h2>Popular</h2>
+                            <h3>Movies</h3>
+                        </div>
+                        <div class="c2-moviesrender">
+                            <div class="items item1">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item2">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item3">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item4">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item5">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item6">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item7">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item8">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item9">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item10">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item11">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item12">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item13">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item14">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item15">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item16">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item17">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item18">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item19">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                            <div class="items item20">
+                                <h3>hello, love ,bye go then go</h3>
+                                <img src="../hero.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                            <div class="c2-buttons">
+                                <a href="#" class="c2-button1">Previous page</a>
+                                <a href="#" class="c2-button2">Next page</a>
+                            </div>
+            </div>
+        </div> -->
+        </div>
+
+        <footer class="footer">
+                <div class="footer-grid">
+                     <h3>Movies <span>.</span></h3>
+                 </div>
+                 <div class="footer-copyright">
+                        <p>copyright &copy; NagasaiJithin</p>
+                        <img src="../Tmdb-312x276-logo.png" alt="">
+                 </div>
+                 
+        </footer>
+</body>
+</html>
+
+
+
+
+

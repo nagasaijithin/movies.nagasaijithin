@@ -1,0 +1,135 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+            @media screen and (max-width:768px) {
+                &{
+                    padding: 2rem 2rem;
+                }
+            }
+    &  a{
+        text-decoration: none;
+        color: black;
+        & h3 {
+            font-weight: 500;
+            span{
+                color: orangered;
+                font-size: 3rem;
+            }
+        }
+    }
+        
+    
+   
+    &__handel-bar{
+        
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        z-index: 2000;
+        position: fixed;
+        right: 5rem;
+        transition: all .5s cubic-bezier(.38,-0.17,.51,1.61);
+        cursor: pointer;
+        @media screen and (max-width:768px) {
+            &{
+                right: 2rem;
+            }
+        }
+        & .barsActive {
+            width: 0%;
+            height: 3px;
+            background-color:black;
+            display: inline-block;
+            transition: all .5s ease-in;
+            
+            &::after{
+                content: "";
+                width: 80%;
+                transform-origin: 80%;
+                transform: rotate(-44deg);
+                height: 3px;
+                background-color: black;
+                position: absolute;
+                top: 1.5rem;
+                transition: all .5s cubic-bezier(.38,-0.17,.51,1.61);
+                animation: handel2 1s ease-in;
+            }
+            &::before{
+                content: "";
+                width: 80%;
+                transform-origin: 85%;
+                transform: rotate(43deg);
+                height: 3px;
+                background-color: black;
+                position: absolute;
+                top: 3.3rem;
+                transition: all .5s cubic-bezier(.38,-0.17,.51,1.61);
+                animation: handel 1s ease-in;
+                
+            }
+        }
+
+
+        &:hover .barsActive::after{
+            transform: rotate(-44deg) scale(1.1); 
+            box-shadow: 0rem 1rem 2rem rgba(0,0,0,0.2);
+        }
+        &:hover .barsActive::before{
+            box-shadow: 0rem 1rem 2rem rgba(0,0,0,0.2);
+            transform: rotate(43deg) scale(1.1); 
+        }
+        
+        & .bars{
+            width:2.7rem;
+            height: 3px;
+            background-color:black;
+            display: inline-block;
+            transition: all .5s ease-in;
+            &::after{
+                content: "";
+                width: 3.3rem;
+                height: 3px;
+                background-color: black;
+                position: absolute;
+                top: 1.5rem;
+                transition: all .5s cubic-bezier(.38,-0.17,.51,1.61);
+            }
+            &::before{
+                content: "";
+                width: 2rem;
+                height: 3px;
+                background-color: black;
+                position: absolute;
+                top: 3.1rem;
+                transition: all .5s cubic-bezier(.38,-0.17,.51,1.61);
+                @media screen and (max-width:375px) {
+                    &{
+                        top: 3.2rem;
+                    }
+                }
+            }
+        }
+
+        &:hover .bars::before{
+            transform: translateX(-.6rem)
+        }
+
+        &:hover .bars::after{
+            transform: translateX(.6rem)
+        }
+       
+    }
+
+
+
+
+}

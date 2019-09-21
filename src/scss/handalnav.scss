@@ -1,0 +1,95 @@
+.handale-nav{
+    width:100%;
+    background-image: linear-gradient(to right,rgba(255,255,255,0.7),rgba(255,255,255,0.5));
+    background-attachment: fixed;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    right: 2000rem;
+    transition:all 0.5s ease-in;
+    background-size: cover;
+    background-position: center;
+    overflow-y: scroll;
+
+    //
+    & .form {
+        margin: 3rem 8rem;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 0.3rem 2rem;
+        z-index: 100;
+        display: inline-block;
+        
+         @media screen and (max-width:658px){
+                &{
+                    display: flex;
+                    margin: 10rem 2rem 2rem;
+    
+                }
+            }
+            
+        & input{
+            padding: .7rem 5rem;
+            font-size: 2rem;
+            border: none;
+            background: none;
+            
+            @media screen and (max-width:658px){
+                &{
+                    flex:3;
+                    padding: 0 1rem;
+    
+                }
+            }
+            @media screen and (max-width:375px){
+                &{
+                    flex:1;
+    
+                }
+            }
+        }
+
+        & button{
+            
+            border: none;
+            background: none;
+            font-size: 2.5rem;
+            @media screen and (max-width:658px){
+                &{
+                    flex:1;
+    
+                }
+            }
+        }
+    }
+
+    & .nav-items {
+        padding: 6rem 10rem;
+        font-size: 4rem;
+        font-weight: 900;
+        list-style: none;
+        perspective: 500px;
+        text-align: center;
+        overflow: hidden;
+        @media screen and (max-width:538px){
+            &{
+                padding: 4rem 0rem;
+
+            }
+        }
+        
+    & > .items {
+        padding: 2rem;
+        transform: scaleX(1.1) rotateY(9deg);
+        font-size: 5rem;
+        text-shadow: 0rem 1rem 2rem rgba(0,0,0,0.3);
+        cursor: pointer;
+        @media screen and (max-width:538px){
+                &{
+                font-size:3.5rem;
+                padding: 1.2rem;
+                }
+            }
+    }
+}
+}

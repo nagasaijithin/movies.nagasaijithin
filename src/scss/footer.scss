@@ -1,0 +1,40 @@
+.footer{
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    grid-row: 5;
+    
+    & .footer-grid{ 
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    & h3{
+        font-size: 5rem;
+        font-weight: 500;
+        cursor: pointer;
+
+        & span{
+            color: orangered;
+            font-size: 5rem;
+        }
+    }
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    p{
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    img{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+   
+}
+    
+    

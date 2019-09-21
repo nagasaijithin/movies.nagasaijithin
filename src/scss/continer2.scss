@@ -1,0 +1,77 @@
+.continer-2{
+
+    & .c2-render{
+        margin: 2rem 5rem 5rem;
+
+        & .c2-moviesrender{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-auto-rows: 400px;
+            justify-content: space-around;
+            align-content: center;
+            grid-gap: 2rem;
+            margin: 2rem;
+            & .items{
+                border-radius: 3px;
+                position: relative;
+                overflow: hidden;
+                box-shadow:0rem 2rem 5rem rgba(0, 0, 0, 0.2);
+                transition:all 0.5s ease-in;
+    
+                cursor: pointer;
+                
+                & img{
+                    position: absolute;
+                    width: 100%;
+                    height: 70%;
+                    box-shadow: none;
+                    border-radius: inherit;
+                }
+    
+                & h3{
+                    position: absolute;
+                    top: 85%;
+                    left: 50%;
+                    transform: translate(-50%, -40%);
+                    width: 80%;
+                    text-align: center;
+                    font-size: 1.4rem;
+                    text-transform: capitalize;
+                    background: none;
+                    box-shadow: none;
+                    font-weight: 400;
+                }
+                &:hover,
+                &:active{
+                    box-shadow:0rem 2rem 5rem rgba(0, 0, 0, 0.1);
+                    transform: scale(.98)
+                }
+            }
+        }
+
+    }
+            & .c2-buttons{
+                margin: 2rem 5rem;
+                display: flex;
+                justify-content: space-between;
+
+                & a{
+                    padding: 1rem 2rem;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.3rem;
+                    border-radius: 40px;
+                    border: 1px solid rgba(13, 13, 13, 0.451);
+                    align-self: center;
+                    box-shadow:  0rem .5rem 2rem rgba(0, 0, 0, 0.2);
+                    transition: all 0.5s ease-in;
+                    background-color: #f8f8f8;
+    
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+    
+                }
+            }
+}
